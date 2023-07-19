@@ -150,17 +150,49 @@ color: white;
     line-height: 45px;
 }
 
+/* games section */
+.games-section{
+    text-align: center;
+    margin: 1rem 12rem;
+}
+.games-box-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
+    
+}
+.games-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+/* .autistic-img{
+    padding-top: 15px; 
+}  */
+.games-box-container img:hover{
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.games-caption{
+    color: #534C64;
+ font-size: 20px;
+ font-weight: 500;
+}
 
 
 
 
 @media screen and (max-width: 576px) {
     
-.nav-container, .goat-section,.nav-menu{
+.nav-container, .goat-section,.nav-menu, .games-box-container{
     flex-direction: column;
 }
-.nav-container{
+.nav-container, .games-section{
     margin: 2rem 0;
 }
 .goat-icon{
