@@ -155,7 +155,7 @@ color: white;
     text-align: center;
     margin: 1rem 12rem;
 }
-.games-box-container{
+.games-container{
     display: flex;
     gap: 30px;
     align-items: center;
@@ -173,16 +173,54 @@ color: white;
 /* .autistic-img{
     padding-top: 15px; 
 }  */
-.games-box-container img:hover{
+/* .games-box-container img:hover{
     border-radius: 16px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
+}*/
 
-.games-caption{
+.games-caption{ 
     color: #534C64;
  font-size: 20px;
  font-weight: 500;
 }
+.game-box {
+    /* width: 342px;
+height: 400px;
+flex-shrink: 0; */
+   text-align: center;
+     transform: translate(0);
+     align-items: center;
+}
+
+
+.games-box-container{
+    margin: auto;
+}
+.overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 5px solid #FF42A5;
+    color: #FF42A5;
+
+}
+.game-box:hover .overlay{
+    opacity: 0.8;
+} 
 
 /* ad section */
 .ad-section{
@@ -307,7 +345,7 @@ background-clip: text;
         padding7px
     }
     
-.nav-container, .goat-section,.nav-menu, .games-box-container, .ad-section{
+.nav-container, .goat-section,.nav-menu, .games-container, .ad-section{
     flex-direction: column;
 }
 .ad-section{
